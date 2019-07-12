@@ -1,0 +1,9 @@
+{
+  "type": "object",
+  "properties": {
+    "limit": {
+      "type": ["number", "string"]
+    }
+  },
+  "additionalProperties": true
+}
