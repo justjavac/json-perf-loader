@@ -6,7 +6,6 @@ describe('Loader', () => {
       loader: {
         test: /\.json$/,
         type: 'javascript/auto',
-        options: {},
       },
     }
 

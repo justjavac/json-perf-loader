@@ -3,13 +3,17 @@ const validateOptions = require('schema-utils')
 
 const schema = require('./options.json')
 
-function shouldInline(limit = 10240, size) {
+const DEFAULT_OPTIONS = {
+  limit: 10240,
+}
+
+function shouldInline(limit, size) {
   return size <= parseInt(limit, 10)
 }
 
 // https://v8.dev/blog/cost-of-javascript-2019#json
 module.exports = function(source) {
-  const options = getOptions(this) || {}
+  const options = Object.assign({}, DEFAULT_OPTIONS, getOptions(this))
 
   validateOptions(schema, options, 'JSON Perf Loader')
 

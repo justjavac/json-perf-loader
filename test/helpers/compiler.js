@@ -15,7 +15,7 @@ const modules = config => {
             type: 'javascript/auto',
             use: {
               loader: path.resolve(__dirname, '../../src'),
-              options: config.loader.options || {},
+              options: config.loader.options,
             },
           },
         ]
