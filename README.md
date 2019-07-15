@@ -3,6 +3,7 @@
 [![npm package](https://nodei.co/npm/json-perf-loader.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/json-perf-loader/)
 
 [![build][build]][build-url]
+[![cover][cover]][cover-url]
 [![npm][npm]][npm-url]
 [![node][node]][node-url]
 [![deps][deps]][deps-url]
