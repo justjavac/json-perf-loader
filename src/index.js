@@ -13,24 +13,23 @@ module.exports = function(source) {
 
   validateOptions(schema, options, 'JSON Perf Loader')
 
-  
   let value
-  
+
   try {
     value = typeof source === 'string' ? JSON.parse(source) : source
   } catch (error) {
     this.emitError(error)
   }
-  
+
   if (shouldInline(options.limit, source.length)) {
     value = JSON.stringify(value)
-    .replace(/\u2028/g, '\\u2028')
-    .replace(/\u2029/g, '\\u2029')
-    
+      .replace(/\u2028/g, '\\u2028')
+      .replace(/\u2029/g, '\\u2029')
+
     return `module.exports = ${value}`
   }
-  
+
   return `module.exports = JSON.parse('${JSON.stringify(value)}')`
 }
 
-exports.raw = true;
+exports.raw = true
