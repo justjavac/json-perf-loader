@@ -6,6 +6,7 @@
 [![cover][cover]][cover-url]
 [![npm][npm]][npm-url]
 [![node][node]][node-url]
+[![download][download][download-url]
 [![deps][deps]][deps-url]
 [![size][size]][size-url]
 
@@ -119,6 +120,8 @@ module.exports = {
 [node-url]: https://nodejs.org
 [deps]: https://david-dm.org/justjavac/json-perf-loader.svg
 [deps-url]: https://david-dm.org/justjavac/json-perf-loader
+[download]:https://img.shields.io/npm/dm/json-perf-loader.svg?style=flat
+[download-url]:https://npmcharts.com/compare/json-perf-loader?minimal=true
 [tests]: https://dev.azure.com/justjavac/json-perf-loader/_apis/build/status/justjavac.json-perf-loader?branchName=master
 [tests-url]: https://dev.azure.com/justjavac/json-perf-loader/_build/latest?definitionId=2&branchName=master
 [cover]: https://codecov.io/gh/justjavac/json-perf-loader/branch/master/graph/badge.svg
