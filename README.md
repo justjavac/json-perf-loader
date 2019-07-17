@@ -6,7 +6,7 @@
 [![cover][cover]][cover-url]
 [![npm][npm]][npm-url]
 [![node][node]][node-url]
-[![download][download][download-url]
+[![download][download]][download-url]
 [![deps][deps]][deps-url]
 [![size][size]][size-url]
 
