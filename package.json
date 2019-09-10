@@ -9,7 +9,7 @@
   "bugs": "https://github.com/justjavac/json-perf-loader/issues",
   "main": "src/index.js",
   "engines": {
-    "node": ">= 8.0.0"
+    "node": "> 8.9.0"
   },
   "scripts": {
     "clean": "rimraf -rf coverage",
