@@ -1,6 +1,6 @@
 # json-perf-loader
 
-[![npm package](https://nodei.co/npm/json-perf-loader.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/json-perf-loader/)
+[![npm package](https://nodei.co/npm/json-perf-loader.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/json-perf-loader/) [![Greenkeeper badge](https://badges.greenkeeper.io/justjavac/json-perf-loader.svg)](https://greenkeeper.io/)
 
 [![build][build]][build-url]
 [![cover][cover]][cover-url]
