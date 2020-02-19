@@ -37,18 +37,18 @@
   },
   "dependencies": {
     "loader-utils": "^1.1.0",
-    "schema-utils": "^2.2.0"
+    "schema-utils": "^2.6.4"
   },
   "devDependencies": {
-    "codecov": "^3.5.0",
+    "codecov": "^3.6.5",
     "cross-env": "^7.0.0",
-    "husky": "^4.0.2",
-    "jest": "^24.9.0",
-    "lint-staged": "^10.0.3",
+    "husky": "^4.2.3",
+    "jest": "^25.1.0",
+    "lint-staged": "^10.0.7",
     "memory-fs": "^0.5.0",
     "prettier": "^1.18.2",
-    "rimraf": "^3.0.0",
-    "webpack": "^4.39.3"
+    "rimraf": "^3.0.2",
+    "webpack": "^4.41.6"
   },
   "keywords": [
     "webpack",
