@@ -36,19 +36,19 @@
     "webpack": "^4.0.0"
   },
   "dependencies": {
-    "loader-utils": "^1.1.0",
-    "schema-utils": "^2.6.4"
+    "loader-utils": "^1.4.0",
+    "schema-utils": "^2.6.5"
   },
   "devDependencies": {
     "codecov": "^3.6.5",
-    "cross-env": "^7.0.0",
+    "cross-env": "^7.0.2",
     "husky": "^4.2.3",
     "jest": "^25.1.0",
-    "lint-staged": "^10.0.7",
+    "lint-staged": "^10.0.8",
     "memory-fs": "^0.5.0",
     "prettier": "^1.18.2",
     "rimraf": "^3.0.2",
-    "webpack": "^4.41.6"
+    "webpack": "^4.42.0"
   },
   "keywords": [
     "webpack",
