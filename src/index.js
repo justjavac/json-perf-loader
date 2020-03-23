@@ -12,7 +12,7 @@ function shouldInline(limit, size) {
 }
 
 // https://v8.dev/blog/cost-of-javascript-2019#json
-module.exports = function(source) {
+module.exports = function (source) {
   const options = Object.assign({}, DEFAULT_OPTIONS, getOptions(this))
 
   validateOptions(schema, options, 'JSON Perf Loader')
