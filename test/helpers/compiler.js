@@ -4,7 +4,7 @@ const rimraf = require('rimraf')
 const webpack = require('webpack')
 const MemoryFS = require('memory-fs')
 
-const modules = config => {
+const modules = (config) => {
   return {
     rules: config.rules
       ? config.rules
@@ -23,9 +23,9 @@ const modules = config => {
   }
 }
 
-const plugins = config => [].concat(config.plugins || [])
+const plugins = (config) => [].concat(config.plugins || [])
 
-const output = config => {
+const output = (config) => {
   return {
     path: path.resolve(
       __dirname,
@@ -36,7 +36,7 @@ const output = config => {
   }
 }
 
-module.exports = function(fixture, config, options) {
+module.exports = function (fixture, config, options) {
   config = {
     mode: 'development',
     devtool: config.devtool || 'sourcemap',
