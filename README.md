@@ -1,6 +1,6 @@
 # json-perf-loader
 
-[![build][build]][build-url]
+![ci](https://github.com/justjavac/json-perf-loader/workflows/ci/badge.svg?branch=master)
 [![cover][cover]][cover-url]
 [![npm][npm]][npm-url]
 [![node][node]][node-url]
@@ -110,8 +110,6 @@ module.exports = {
 
 [MIT](./LICENSE)
 
-[build]: https://travis-ci.com/justjavac/json-perf-loader.svg?branch=master
-[build-url]: https://travis-ci.com/justjavac/json-perf-loader
 [npm]: https://img.shields.io/npm/v/json-perf-loader.svg
 [npm-url]: https://npmjs.com/package/json-perf-loader
 [node]: https://img.shields.io/node/v/json-perf-loader.svg
