@@ -21,4 +21,4 @@ jobs:
         run: yarn test:coverage
 
       - name: codecov
-        run: yarn codecov
+        run: yarn codecov -t ${{ secrets.CODECOV_TOKEN }}
