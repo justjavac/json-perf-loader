@@ -40,7 +40,7 @@
     "schema-utils": "^2.7.0"
   },
   "devDependencies": {
-    "codecov": "^3.7.0",
+    "codecov": "^3.7.1",
     "cross-env": "^7.0.2",
     "husky": "^4.2.5",
     "jest": "^26.1.0",
