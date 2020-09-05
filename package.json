@@ -1,6 +1,6 @@
 {
   "name": "json-perf-loader",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "A loader for webpack to load JSON with performance advice",
   "license": "MIT",
   "repository": "justjavac/json-perf-loader",
