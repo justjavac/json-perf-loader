@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.0.6 - [2020-09-06]
+
+- yarn upgrade ([#26](https://github.com/justjavac/json-perf-loader/pull/26))
+
 ## 1.0.5 - [2020-07-20]
 
 - Bump lodash from 4.17.15 to 4.17.19 ([#24](https://github.com/justjavac/json-perf-loader/pull/24))
