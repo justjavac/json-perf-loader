@@ -1,5 +1,5 @@
 const { getOptions } = require('loader-utils')
-const validateOptions = require('schema-utils')
+const { validate } = require('schema-utils')
 
 const schema = require('./options.json')
 
@@ -15,7 +15,7 @@ function shouldInline(limit, size) {
 module.exports = function (source) {
   const options = Object.assign({}, DEFAULT_OPTIONS, getOptions(this))
 
-  validateOptions(schema, options, 'JSON Perf Loader')
+  validate(schema, options, 'JSON Perf Loader')
 
   let value
 
