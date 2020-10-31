@@ -13,6 +13,7 @@ describe('Loader', () => {
     const stats = await webpack('fixture-big.js', config)
     const [{ source }] = stats.toJson().modules
 
-    expect(source).toMatch('JSON.parse')
+    // this will fail when there is an error e.g: `throw new Error...`
+    expect(source.startsWith('module.exports = JSON.parse')).toEqual(true)
   })
 })
