@@ -33,7 +33,7 @@ module.exports = function (source) {
     return `module.exports = ${value}`
   }
 
-  return `module.exports = JSON.parse('${JSON.stringify(value)}')`
+  return `module.exports = JSON.parse(\`${JSON.stringify(value)}\`)`
 }
 
 exports.raw = true
