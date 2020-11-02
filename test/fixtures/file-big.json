@@ -1327,6 +1327,9 @@
     },
     {
       "foooooooooooooooooooooooo": "barararararararararararararararararararararararararararararar"
+    },
+    {
+      "with-single-quotes": "this 'should' also work"
     }
   ]
   
