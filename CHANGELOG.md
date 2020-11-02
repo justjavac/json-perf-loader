@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.0.7 - [2020-11-02]
+
+- Upgrade schema-utils, and handle single quotes in large JSON files ([#29](https://github.com/justjavac/json-perf-loader/pull/29))
+
 ## 1.0.6 - [2020-09-06]
 
 - yarn upgrade ([#26](https://github.com/justjavac/json-perf-loader/pull/26))
