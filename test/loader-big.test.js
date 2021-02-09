@@ -15,5 +15,8 @@ describe('Loader', () => {
 
     // this will fail when there is an error e.g: `throw new Error...`
     expect(source.startsWith('module.exports = JSON.parse')).toEqual(true)
+
+    // validate syntax
+    expect(() => eval(source)).not.toThrow()
   })
 })
