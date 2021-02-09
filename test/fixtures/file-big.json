@@ -1330,6 +1330,8 @@
     },
     {
       "with-single-quotes": "this 'should' also work"
+    },
+    {
+      "with-double-\"quotes\"": "this \"should\" also work"
     }
-  ]
-  
+]
