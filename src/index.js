@@ -33,7 +33,9 @@ module.exports = function (source) {
     return `module.exports = ${value}`
   }
 
-  return `module.exports = JSON.parse(\`${JSON.stringify(value)}\`)`
+  // the outer JSON.stringify is parsed by JavaScript
+  // the inner JSON.stringify is parsed by JSON.parse
+  return `module.exports = JSON.parse(${JSON.stringify(JSON.stringify(value))})`
 }
 
 exports.raw = true
