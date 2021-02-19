@@ -3,10 +3,8 @@
 ![ci](https://github.com/justjavac/json-perf-loader/workflows/ci/badge.svg?branch=master)
 [![cover][cover]][cover-url]
 [![npm][npm]][npm-url]
-[![node][node]][node-url]
 [![download][download]][download-url]
 [![deps][deps]][deps-url]
-[![size][size]][size-url]
 
 A loader for webpack to load JSON with performance advice.
 
@@ -112,8 +110,6 @@ module.exports = {
 
 [npm]: https://img.shields.io/npm/v/json-perf-loader.svg
 [npm-url]: https://npmjs.com/package/json-perf-loader
-[node]: https://img.shields.io/node/v/json-perf-loader.svg
-[node-url]: https://nodejs.org
 [deps]: https://david-dm.org/justjavac/json-perf-loader.svg
 [deps-url]: https://david-dm.org/justjavac/json-perf-loader
 [download]: https://img.shields.io/npm/dm/json-perf-loader.svg?style=flat
@@ -122,5 +118,3 @@ module.exports = {
 [tests-url]: https://dev.azure.com/justjavac/json-perf-loader/_build/latest?definitionId=2&branchName=master
 [cover]: https://codecov.io/gh/justjavac/json-perf-loader/branch/master/graph/badge.svg
 [cover-url]: https://codecov.io/gh/justjavac/json-perf-loader
-[size]: https://packagephobia.now.sh/badge?p=json-perf-loader
-[size-url]: https://packagephobia.now.sh/result?p=json-perf-loader
