@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.0.8 - [2021-02-19]
+
+- Handle escaped double quotes in JSON ([#33](https://github.com/justjavac/json-perf-loader/pull/33))
+
 ## 1.0.7 - [2020-11-02]
 
 - Upgrade schema-utils, and handle single quotes in large JSON files ([#29](https://github.com/justjavac/json-perf-loader/pull/29))
