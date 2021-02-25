@@ -1,7 +1,7 @@
 const path = require('path')
 
 const rimraf = require('rimraf')
-const webpack = require('webpack')
+const webpack = require('webpack4')
 const MemoryFS = require('memory-fs')
 
 const modules = (config) => {
@@ -39,7 +39,7 @@ const output = (config) => {
 module.exports = function (fixture, config, options) {
   config = {
     mode: 'development',
-    devtool: config.devtool || 'sourcemap',
+    devtool: config.devtool || 'source-map',
     context: path.resolve(__dirname, '..', 'fixtures'),
     entry: `./${fixture}`,
     output: output(config),
