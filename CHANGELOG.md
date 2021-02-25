@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.1.0 - [2021-02-25]
+
+- support webpack5 ([#35](https://github.com/justjavac/json-perf-loader/pull/35))
+
 ## 1.0.8 - [2021-02-19]
 
 - Handle escaped double quotes in JSON ([#33](https://github.com/justjavac/json-perf-loader/pull/33))
