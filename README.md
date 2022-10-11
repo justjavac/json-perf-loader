@@ -4,7 +4,6 @@
 [![cover][cover]][cover-url]
 [![npm][npm]][npm-url]
 [![download][download]][download-url]
-[![deps][deps]][deps-url]
 
 A loader for webpack to load JSON with performance advice.
 
@@ -110,8 +109,6 @@ module.exports = {
 
 [npm]: https://img.shields.io/npm/v/json-perf-loader.svg
 [npm-url]: https://npmjs.com/package/json-perf-loader
-[deps]: https://david-dm.org/justjavac/json-perf-loader.svg
-[deps-url]: https://david-dm.org/justjavac/json-perf-loader
 [download]: https://img.shields.io/npm/dm/json-perf-loader.svg?style=flat
 [download-url]: https://npmcharts.com/compare/json-perf-loader?minimal=true
 [tests]: https://dev.azure.com/justjavac/json-perf-loader/_apis/build/status/justjavac.json-perf-loader?branchName=master
