@@ -6,6 +6,16 @@ describe('Loader', () => {
     expect(loader.raw).toEqual(true)
   })
 
+  it('should handle string input', () => {
+    const context = {
+      query: {},
+    }
+
+    expect(loader.call(context, '{"foo":"bar"}')).toEqual(
+      'module.exports = {"foo":"bar"}',
+    )
+  })
+
   it('should handle buffer input', () => {
     const context = {
       query: {},
