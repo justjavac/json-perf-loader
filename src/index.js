@@ -8,24 +8,28 @@ const DEFAULT_OPTIONS = {
 }
 
 function shouldInline(limit, size) {
-  return size <= parseInt(limit, 10)
+  return size < parseInt(limit, 10)
 }
 
 // https://v8.dev/blog/cost-of-javascript-2019#json
-module.exports = function (source) {
+function loader(source) {
   const options = Object.assign({}, DEFAULT_OPTIONS, getOptions(this))
 
   validate(schema, options, 'JSON Perf Loader')
 
+  const content = Buffer.isBuffer(source) ? source.toString('utf8') : source
+  const size = Buffer.isBuffer(source)
+    ? source.length
+    : Buffer.byteLength(content)
   let value
 
   try {
-    value = typeof source === 'string' ? JSON.parse(source) : source
+    value = JSON.parse(content)
   } catch (error) {
-    this.emitError(error)
+    throw error
   }
 
-  if (shouldInline(options.limit, source.length)) {
+  if (shouldInline(options.limit, size)) {
     value = JSON.stringify(value)
       .replace(/\u2028/g, '\\u2028')
       .replace(/\u2029/g, '\\u2029')
@@ -38,4 +42,6 @@ module.exports = function (source) {
   return `module.exports = JSON.parse(${JSON.stringify(JSON.stringify(value))})`
 }
 
-exports.raw = true
+loader.raw = true
+
+module.exports = loader

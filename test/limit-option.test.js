@@ -1,3 +1,6 @@
+const fs = require('fs')
+const path = require('path')
+
 const webpack = require('./helpers/compiler')
 
 describe('limit option', () => {
@@ -14,6 +17,26 @@ describe('limit option', () => {
     const [{ source }] = stats.toJson().modules
 
     expect(source).not.toMatch('JSON.parse')
+  })
+
+  it('uses JSON.parse when file size equals limit', async () => {
+    const limit = fs.readFileSync(
+      path.resolve(__dirname, 'fixtures/file.json'),
+    ).length
+    const config = {
+      loader: {
+        test: /\.json$/,
+        type: 'javascript/auto',
+        options: {
+          limit,
+        },
+      },
+    }
+
+    const stats = await webpack('fixture.js', config)
+    const [{ source }] = stats.toJson().modules
+
+    expect(source).toMatch('JSON.parse')
   })
 
   it('0 ({Number})', async () => {
